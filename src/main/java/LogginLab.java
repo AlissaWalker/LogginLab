@@ -17,7 +17,8 @@ public class LogginLab {
         logger.log(Level.WARNING, "Not So Bad Error!");
 
         logger.log(Level.INFO, "****\n\tAt ZipCode, \n\twe don't use System.out.Println \n\tuntil we've earned the right.\n****");
-
+// loggers are saved into database //loggers ca be sent to other database to print words
+        //loggers are different usage of System.out.print
     }
 
     public Integer getThreshold() {
@@ -33,5 +34,13 @@ public class LogginLab {
     }
 
     // Write a method called thresholdReached, returns true if argument 'limit' is over the threshold.
+    public boolean thresholdReached (Integer limit){
+
+        return (this.threshold == limit) ;
+
+
+
+    }
+
     // Write a test for the method in the Test class.
 }
